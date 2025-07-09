@@ -42,9 +42,8 @@ void random_number()
     printf("\n");
 }
 
-void looping()
+void looping_strings()
 {
-    // For statement 
     printf("Enter five Japanese cars brands:\n");
     char cars [5][11] = {};
     int len = sizeof(cars) / sizeof(cars[0]);
@@ -64,6 +63,27 @@ void looping()
     }
 }
 
+void loopings_numbers()
+{
+    printf("A program to enter in five numbers:\n");
+    int numbers [5] = {};
+
+    // Looping through input five numbers
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Enter numbers: ", i + 1);
+        scanf("%d", &numbers[i]);
+    }
+
+    // looping through printing five number
+    printf("The numbers you entered are:\n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d\n", numbers[i]);
+    }
+
+}
+
 int main (void) 
 {
     int choice = 0;
@@ -73,8 +93,10 @@ int main (void)
         printf("\nChoose from one of the basic concepts:\n");
         printf("1. Basic Statement\n");
         printf("2. Random number generator / If statement\n");
-        printf("3. Loops\n");
-        printf("Enter your choice (1-3): ");
+        printf("3. Loops - Strings\n");
+        printf("4. loops - intergers\n");
+        printf("5. Exit\n");
+        printf("Enter your choice:\n");
         scanf("%d", &choice);
 
         switch (choice)
@@ -88,8 +110,15 @@ int main (void)
                 random_number();
                 break;
             case 3:
-                printf("You have selected Loops\n");
-                looping();
+                printf("You have selected Loops - Strings\n");
+                looping_strings();
+                break;
+            case 4:
+                printf("You have selected loops - Integers\n");
+                loopings_numbers();
+                break;
+            case 5:
+                printf("You have selected to exit\n");
                 break;
             default:
                 printf("Invalid choice. Please select 1, 2, or 3.\n");
