@@ -54,7 +54,7 @@ int main (void)
     printf("List of words stored on the heap:\n");
     for (int i = 0; i < 5; i++)
     {
-        printf("words[%d]: %s\n",i, words[i]);
+        printf("%s\n", words[i]);
         free(words[i]); // Freeing each string individually
     }
     free(words); // Freeing the memory off the heap
