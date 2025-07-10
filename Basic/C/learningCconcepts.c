@@ -92,6 +92,7 @@ void looping_numbers()
 
 }
 
+// Strings example stored on the heap
 void random_number_string_heap()
 {
     // Determing the size of the heap
@@ -163,6 +164,7 @@ void memory_pointer()
     printf("Address stored in number pointer %p\n", (void *)num);
 }
 
+// Confirming whether or not to continue
 char ask_to_continue(void)
 {
     char input;
@@ -179,6 +181,7 @@ char ask_to_continue(void)
     return input;
 }
 
+// Main function
 int main (void) 
 {
     // Assiging variables
@@ -237,8 +240,10 @@ int main (void)
         // Ask if the user wants to try another concept
         again = ask_to_continue();
 
+    // Confirming whether to continue
     } while (again == 'y' || again == 'Y');
 
+    // Goodbye statement
     printf("\nThanks for exploring C concepts. Goodbye!\n");
     return 0;
 }
