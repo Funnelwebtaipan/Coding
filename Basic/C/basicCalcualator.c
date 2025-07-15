@@ -54,19 +54,19 @@ int main ()
             printf("\nYou have selected Addition\n");
             printf("\nEnter two numbers\n");
             scanf("%d%d", &x, &y);
-            printf("\nThe sum of the values are %f\n", additionf(x,y));
+            printf("\nThe sum of the values are: %f\n", additionf(x,y));
             break;
         case 2:
             printf("\nYou have selected Subtraction\n");
             printf("\nEnter two numbers:\n");
             scanf("\n%d%d", &x, &y);
-            printf("\nThe sum of the two values are:\n", subtractionf(x,y));
+            printf("\nThe sum of the two values are: %f\n", subtractionf(x,y));
             break;
         case 3:
             printf("\nYou have selected Multiplication\n");
             printf("\nEnter two numbers:\n");
             scanf("\n%d%d", &x, &y);
-            printf("\nThe sum of the two values are %f\n", multiplicationf(x,y));
+            printf("\nThe sum of the two values are: %f\n", multiplicationf(x,y));
             break;
         case 4:
             printf("\nYou have selected Division\n");
@@ -77,13 +77,13 @@ int main ()
                 printf("\nCannot divide by zero\n");
                 break;
             }
-            printf("\nThe sum of the two values are:%f\n", divisionf(x,y));
+            printf("\nThe sum of the two values are: %f\n", divisionf(x,y));
             break;
         case 5:
             printf("\nYou have selected Pi Radius\n");
             printf("\nEnter in the radius value:\n");
             scanf("\n%d", &x);
-            printf("\nThe radius is %f\n", pi_radius(x));
+            printf("\nThe radius is: %f\n", pi_radius(x));
             break;
         case 8:
             printf("\nYou have selected to exit the program\n");
