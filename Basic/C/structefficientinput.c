@@ -53,7 +53,7 @@ void obtaining_info(info **information)
         scanf("%d", &information[i]->age);  // You forgot the & (address of)
     }
 
-    // ✅ Display entered data
+    // Display entered data
     printf("\nEntered information:\n");
     for (int i = 0; i < count; i++)
     {
